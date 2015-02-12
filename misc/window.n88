@@ -1,2 +1,0 @@
-1 ‘N88-BASIC WINDOW文を用いたスクロール
-2 cls 3:screen 33 x=320:y=2004 k=inp(&he0)5 xf=xf+(k=239)*(xf>-5)-(k=191)*(xf<5)6 yf=yf+(inp(&he1)=254)*(yf>-5)-(k=251)*(yf<5)7 line(100,1000)-(100,-1000),78 window(x-320,y-200)-(x+319,y+199)9 x=x+xf:y=y+yf10 line(100,1000)-(100,-1000),011 goto 4
