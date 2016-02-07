@@ -1,0 +1,17 @@
+<script type="text/javascript">
+<!--
+var timer;
+
+onload = function() {
+  timer = setInterval(
+    function () {
+      var dat = new Date();
+      document.getElementById('result').innerHTML = dat.toLocaleTimeString();
+    },
+  1000);
+};
+-->
+</script>
+
+<input type="button" value="stop timer" onclick="clearInterval(timer)" />
+<div id="result"></div>

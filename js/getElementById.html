@@ -1,0 +1,16 @@
+<script type="text/javascript">
+<!--
+function btn_onclick() {
+  var result = document.getElementById('result');
+  result.innerHTML = 'hello, ' + document.fm.name.value + '!';
+}
+-->
+</script>
+
+<form name="fm">
+<label>name:
+  <input type="text" id="name" name="name" size="15" /></label>
+</label>
+<input type="button" value="submit" onclick="btn_onclick()" />
+<div id="result"></div>
+</form>

@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset="UTF-8">
+<script type="text/javascript">
+<!--
+function show() {
+  var result = [];
+  var f = document.fm.food;
+  if(f.checked) {
+    result.push(f.value);
+  }
+
+  window.alert(result.toString());
+  return false;
+}
+-->
+</script>
+
+<form name="fm" method="POST" action="" onsubmit="return show()">
+好きな食べ物は？
+<label><input type="checkbox" name="food" value="ラーメン" />ラーメン</label>
+<input type="submit" value="送信" />
+</form>

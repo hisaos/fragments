@@ -1,0 +1,19 @@
+<script type="text/javascript">
+<!--
+var subwin;
+
+function win_open() {
+  subwin = open('', 'Sample', 'width=600, height=300, scrollbars=yes, location=yes');
+}
+
+function win_close() {
+  if(subwin && !subwin.closed) {
+    subwin.close();
+  }
+}
+-->
+</script>
+
+<input type="button" value="open subwindow" onclick="win_open()" />
+<input type="button" value="close subwindow" onclick="win_close()" />
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="UTF-8">
+<script type="text/javascript">
+<!--
+window.onload = function() {
+  var result = [];
+  var s = document.getElementById('food');
+  var opts = s.childNodes;
+  for(var i = 0; i < opts.length; i++) {
+    var opt = opts.item(i);
+    if(opt.nodeType == 1) {
+      result.push(opts.item(i).value);
+    }
+  }
+  window.alert(result.join(','));
+}
+-->
+</script>
+
+<form name="fm">
+<select id="food" name="food">
+  <option value="ラーメン">ラーメン</option>
+  <option value="餃子">餃子</option>
+  <option value="焼肉">焼肉</option>
+</select>
+<input type="submit" value="submit" />
+</form>

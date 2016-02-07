@@ -1,0 +1,18 @@
+<script type="text/javascript">
+<!--
+function winOpen() {
+  var subwin = window.open('', 'Child', 'width=200, height=200');
+  subwin.document.open('text/html');
+  subwin.document.writeln('input value;');
+  subwin.document.writeln(subwin.opener.document.fm.data.value);
+  subwin.document.writeln('<br /><input type="button" value="close"');
+  subwin.document.writeln('onclick="self.close();" />');
+  subwin.document.close();
+}
+-->
+</script>
+
+<form name="fm">
+  <input type="text" name="data" value="value to be output" />
+  <input type="button" value="open" onclick="winOpen()" />
+</form>

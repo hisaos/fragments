@@ -1,0 +1,21 @@
+<!doctype html>
+<meta charset="UTF-8">
+<script type="text/javascript">
+<!--
+function show() {
+  var f = document.fm.food;
+  window.alert(f.options[f.selectedIndex].text);
+  return false;
+}
+-->
+</script>
+
+<form name="fm" onsubmit="return show()">
+  一番好きな食べ物は？
+  <select name="food">
+    <option value="ラーメン">ラーメン</option>
+    <option value="餃子">餃子</option>
+    <option value="焼肉">焼肉</option>
+  </select>
+  <input type="submit" value="submit" />
+</form>

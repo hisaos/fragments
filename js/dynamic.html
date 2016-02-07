@@ -1,0 +1,22 @@
+<script type="text/javascript">
+<!--
+function process () {
+  var result = '';
+  for (var i = 0; i < document.fm.elements.length; i++) {
+    result += document.fm.elements[i].value + '\n';
+  }
+  window.alert(result);
+  return false;
+}
+-->
+</script>
+
+<form name='fm' onsubmit="return process()">
+<label>name1:
+  <input type="text" name="name1" size="10" /></label><br />
+<label>name2:
+  <input type="text" name="name2" size="10" /></label><br />
+<label>name3:
+  <input type="text" name="name3" size="10" /></label><br />
+<input type="submit" value="submit" />
+</form>

@@ -1,0 +1,26 @@
+<!doctype html>
+<meta charset="UTF-8">
+<script type="text/javascript">
+<!--
+function show() {
+  var result = [];
+  var f = document.fm.food;
+  for(var i = 0; i < f.length; i++) {
+    if(f[i].checked) {
+      result.push(f[i].value);
+    }
+  }
+
+  window.alert(result.toString());
+  return false;
+}
+-->
+</script>
+
+<form name="fm" method="POST" action="" onsubmit="return show()">
+好きな食べ物は？
+<label><input type="radio" name="food" value="ラーメン" />ラーメン</label><br />
+<label><input type="radio" name="food" value="餃子" />餃子</label><br />
+<label><input type="radio" name="food" value="焼肉" />焼肉</label><br />
+<input type="submit" value="送信" />
+</form>

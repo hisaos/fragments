@@ -1,0 +1,15 @@
+<script type="text/javascript">
+<!--
+function process () {
+  var name = document.forms['fm'].elements['name'].value;
+  window.alert('hello, ' + name + '!');
+  return false;
+}
+-->
+</script>
+
+<form name="fm" onsubmit="return process()" >
+name: 
+<input type="text" name="name" size=10 />
+<input type="submit" value="submit" />
+</form>

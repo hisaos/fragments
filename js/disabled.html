@@ -1,0 +1,22 @@
+<!doctype html>
+<meta charset="UTF-8">
+<script type="text/javascript">
+<!--
+function process () {
+  var fmt = document.fm.fmt;
+  for(var i = 0; i < fmt.length; i++) {
+    fmt[i].disabled = !document.fm.need.checked;
+  }
+}
+-->
+</script>
+
+<form name="fm">
+  <label>
+    メールニュースの配信を希望
+    <input type="checkbox" name="need" value="1" checked="checked" onclick="process()" />
+  </label>
+  <br />
+  <label><input type="radio" name="fmt" value="plain" />プレーンテキスト形式</label>
+  <label><input type="radio" name="fmt" value="html" />HTML 形式</label>
+</form>

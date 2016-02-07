@@ -1,0 +1,21 @@
+<script type="text/javascript">
+<!--
+function chk () {
+  var q = document.fm.old;
+  if (q.value != null && q.value != '') {
+    if(isNaN(q.value)) {
+      window.alert('input your age as a number');
+      q.value = q.defaultValue;
+      q.focus();
+      q.select();
+      return false;
+    }
+  }
+}
+-->
+</script>
+
+<form name="fm" method="POST" action="" onsubmit="return chk()">
+  <label> age: <input type="text" name="old" value="20" size"3" /> years old</label>
+  <input type="submit" value="submit" />
+</form>
