@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Speech Test</title>
+</head>
+<body>
+	<input type="button" id="enUS" value="I speak Japanese">
+	<input type="button" id="jaJP" value="にほんごしゃべります">
+	<input type="button" id="esES" value="Yo hablo japones">
+	<input type="button" id="zhCN" value="我说日语">
+</body>
+<script type="text/javascript">
+	document.getElementById('jaJP').addEventListener('click', function(e){
+	  	if (typeof SpeechSynthesisUtterance == "undefined") {return;}
+	  	var u = new SpeechSynthesisUtterance();
+	  	u.text = "にほんごしゃべります";
+	  	u.lang = 'ja-JP';
+	  	u.rate = 1;
+	  	window.speechSynthesis.speak(u);
+	});
+	document.getElementById('esES').addEventListener('click', function(e){
+	  	if (typeof SpeechSynthesisUtterance == "undefined") {return;}
+	  	var u = new SpeechSynthesisUtterance();
+	  	u.text = "Yo hablo japones";
+	  	u.lang = 'es-ES';
+	  	u.rate = 1;
+	  	window.speechSynthesis.speak(u);
+	});
+	document.getElementById('enUS').addEventListener('click', function(e){
+	  	if (typeof SpeechSynthesisUtterance == "undefined") {return;}
+	  	var u = new SpeechSynthesisUtterance();
+	  	u.text = "I speak Japanese";
+	  	u.lang = 'en-US';
+	  	u.rate = 1;
+	  	window.speechSynthesis.speak(u);
+	});
+	document.getElementById('zhCN').addEventListener('click', function(e){
+	  	if (typeof SpeechSynthesisUtterance == "undefined") {return;}
+	  	var u = new SpeechSynthesisUtterance();
+	  	u.text = "我说日语";
+	  	u.lang = 'zh-CN';
+	  	u.rate = 1;
+	  	window.speechSynthesis.speak(u);
+	});
+</script>
+</html>
